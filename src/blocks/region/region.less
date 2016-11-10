@@ -1,3 +1,144 @@
 .region {
+  padding: 38px 0 46px;
   
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__left {
+    
+  }
+  
+  &__right {
+    display: flex;
+    padding-top: 10px;
+  }
+  
+  &__map-wrapper {
+    width: 589px;
+    height: 514px;
+    position: relative;
+  }
+  
+  &__map {
+    width: 100%;
+    height: 100%;
+    position: absolute;;
+    
+    &--west {
+      background: url(../img/map-west.png) no-repeat center;
+    }
+    
+    &--east {
+      display: none;
+      background: url(../img/map-east.png) no-repeat center;
+    }
+  }
+  
+  &__button {
+    width: 174px;
+    height: 38px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #414141;
+    font-family: @font-primary;
+    font-size: 14px;
+    .transition;
+        
+    &:hover {
+      border-color: darken(#e1e1e1, 25%);
+    }
+    
+    
+    &--west {
+      display: flex;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      margin-top: -19px;
+      right: -31px;
+      
+      &:after {
+        content: '';
+        display: block;
+        background: url(../img/arrow.svg) no-repeat;
+        background-size: contain;
+        width: 18px;
+        height: 14px;
+        margin-left: 12px;
+      }
+    }
+    
+    &--east {
+      padding: 0 9px;
+      position: absolute;
+      top: 53px;
+      left: 2px;
+      
+      &:before {
+        content: '';
+        display: block;
+        background: url(../img/arrow.svg) no-repeat;
+        background-size: contain;
+        width: 18px;
+        height: 14px;
+        transform: rotate(180deg);
+        margin-right: 6px;
+      }
+    }
+  }
+  
+  &__cities {
+    display: flex;
+    margin-top: 35px;
+  }
+  
+  &__cities-column {
+    
+    &:nth-child(n+2) {
+      margin-left: 90px;
+    }
+  }
+  
+  &__city {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    .transition;
+    
+    &:hover {
+      color: darken(@color-primary, 40%);
+    }
+  }
+  
+  &__province-column {
+    
+    &:nth-child(n+2) {
+      margin-left: 6px;
+    }
+  }
+  
+  &__province {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    display: block;
+    text-decoration: none;
+    .transition;
+    
+    &:hover {
+      color: darken(@color-primary, 40%);
+    }
+  }
 }

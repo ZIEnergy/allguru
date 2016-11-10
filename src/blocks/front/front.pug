@@ -1,6 +1,9 @@
 mixin front(additionalClass)
   .front(class=additionalClass)
-    .wrapper
+    video.video.front__video(poster="img/tropical.jpg", autoplay, loop)
+      source.video__source(src='img/tropical.mp4', type='video/mp4')
+      source.video__source(src='img/tropical.webm', type='video/webm')
+    .wrapper.front__content
       h1.front__title Все Гуру здесь
       p.front__comment Найтите специалиста, который нужен именно Вам!
       +search

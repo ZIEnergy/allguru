@@ -1,2 +1,8 @@
 mixin footer(additionalClass)
   .footer(class=additionalClass)
+    +go-top('footer__go-top')
+    .footer__socials
+      .footer__socials-header Поделитесь с друзьями
+      +socials('footer__socials')
+    +sitemap
+    +copyright

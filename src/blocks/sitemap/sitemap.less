@@ -1,3 +1,21 @@
 .sitemap {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
   
+  &__item {
+    color: @color-primary;
+    font-size: 14px;
+    font-family: @font-primary;
+    text-decoration: none;
+    .transition;
+    
+    &:hover {
+      color: darken(@color-primary, 40%);
+    }
+    
+    &:nth-child(n+2) {
+      margin-left: 25px;
+    }
+  }
 }

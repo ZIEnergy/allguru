@@ -1,0 +1,60 @@
+.modal {
+  width: 410px;
+  background: #fff;
+  padding: 27px 0 30px;
+  margin: 0 auto;
+  border-radius: 4px;
+  
+  &__top {
+    padding-bottom: 19px;
+    margin-bottom: 35px;
+    border-bottom: 2px dotted rgba(22, 53, 89, .16);
+  }
+  
+  &__header {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  &__wrapper {
+    max-width: 277px;
+    margin: 0 auto;
+  }
+  
+  &__input {
+    width: 100%;
+    
+    &:nth-child(n+2) {
+      margin-top: 19px;
+    }
+  }
+  
+  &__button {
+    margin-top: 42px;
+    width: 275px;
+    height: 43px;
+  }
+  
+  &__action {
+    font-family: @font-secondary;
+    font-size: 14px;
+    font-style: italic;
+    color: #4d4d4d;
+    text-align: center;
+    margin: 13px 0 15px;
+  }
+  
+  &__action-link {
+    color: @color-primary;
+    text-decoration: none;
+  }
+  
+  &__socials {
+    border-top: 2px dotted rgba(22, 53, 89, .16);
+  }
+}

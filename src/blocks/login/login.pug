@@ -1,0 +1,14 @@
+mixin login(additionalClass)
+  form.login.modal.mfp-hide#login(action="#", method="post", class=additionalClass)
+    .mfp-close
+    .modal__top
+      .modal__header для ВХОДа <br>ВВЕДИТЕ ЛОГИН И ПАРОЛЬ
+    .modal__wrapper
+      input.input.input--grey.modal__input(type="email", placeholder="mail@mail.ru")
+      input.input.input--grey.modal__input(type="password", placeholder="Пароль")
+      button.button.modal__button Вход
+      .modal__action Не зарегистрированы? 
+        a.modal__action-link(href="#") Регистрация
+    .modal__socials
+      +socials('socials--square')
+      
