@@ -4,6 +4,7 @@
   padding: 27px 0 30px;
   margin: 0 auto;
   border-radius: 4px;
+  position: relative;
   
   &__top {
     padding-bottom: 19px;
@@ -56,5 +57,38 @@
   
   &__socials {
     border-top: 2px dotted rgba(22, 53, 89, .16);
+  }
+  
+  &__captcha {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+  }
+  
+  &__captcha-input {
+    width: 139px;
+  }
+  
+  &__captcha-content {
+    padding-top: 1px;
+  }
+  
+  &__captcha-picture {
+    background: url(../img/captcha.png) no-repeat;
+    background-size: cover;
+    width: 121px;
+    height: 40px;
+  }
+  
+  &__captcha-change {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 8px;
+    display: block;
+    text-align: center;
   }
 }

@@ -1,2 +1,19 @@
 mixin signup(additionalClass)
-  .signup(class=additionalClass)
+  form.signup.modal.mfp-hide#signup(action="#", method="post", class=additionalClass)
+    .mfp-close
+    .modal__top
+      .modal__header для Регистрации <br>создайте свой аккаунт
+    .modal__wrapper
+      input.input.input--grey.modal__input(type="email", placeholder="mail@mail.ru")
+      input.input.input--grey.modal__input(type="password", placeholder="Пароль")
+      input.input.input--grey.modal__input(type="password", placeholder="Подтверждение пароля")
+      .modal__captcha
+        input.input.input--grey.modal__captcha-input(type="text", placeholder="Текст с капчи")
+        .modal__captcha-content
+          .modal__captcha-picture
+          a.modal__captcha-change(href="#") Показать другую
+      button.button.modal__button Регистрация
+      .modal__action Уже зарегистрированы? 
+        a.modal__action-link.modal-link(href="#signup") Войти
+    .modal__socials
+      +socials('socials--square')
