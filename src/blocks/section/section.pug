@@ -1,2 +1,6 @@
-mixin section(additionalClass)
-  .section(class=additionalClass)
+mixin section(icon, header, dscr, additionalClass)
+  a.section(href="#", class=additionalClass)
+    .section__icon(class='section__icon--'+icon)
+    .section__content
+      .section__header #{header}
+      .section__dscr #{dscr}

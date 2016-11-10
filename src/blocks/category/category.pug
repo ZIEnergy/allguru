@@ -1,2 +1,5 @@
-mixin category(additionalClass)
-  .category(class=additionalClass)
+mixin category(icon, header, content, additionalClass)
+  a.category(href="#", class=additionalClass)
+    .category__icon(class="category__icon--"+icon)
+    .category__header #{header}
+    .category__content #{content}
