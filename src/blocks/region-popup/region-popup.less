@@ -1,0 +1,65 @@
+.region-popup {
+  width: 677px;
+  padding: 39px 31px 50px;
+  
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__input-region {
+    width: 212px;
+  }
+  
+  &__input-city {
+    width: 228px;
+  }
+  
+  &__button {
+    
+  }
+  
+  &__popular {
+    
+  }
+  
+  &__popular-header {
+    color: #414141;
+    font-family: @font-primary;
+    font-size: 24px;
+    margin: 35px 0 25px;
+  }
+  
+  &__popular-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__popular-item {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    width: 33%;
+    
+    &:nth-child(3n+2) {
+      padding-left: 30px;
+    }
+    
+    &:nth-child(3n+3) {
+      padding-left: 63px;
+    }
+  }
+  
+  &__all {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    position: absolute;
+    right: 73px;
+    bottom: 18px;
+  }
+}

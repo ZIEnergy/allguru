@@ -1,0 +1,36 @@
+mixin region-popup(additionalClass)
+  .region-popup.modal#region.mfp-hide(class=additionalClass)
+    .mfp-close
+    form.region-popup__form(action="#", method="get")
+      input.input.input--bordered.region-popup__input-region(type="text", placeholder="Область")
+      input.input.input--bordered.region-popup__input-city(type="text", placeholder="Город")
+      button.button.region-popup__button Поиск
+    .region-popup__popular
+      .region-popup__popular-header Популярные города:
+      .region-popup__popular-list
+        a.region-popup__popular-item(href="#") Барнаул
+        a.region-popup__popular-item(href="#") Калининград
+        a.region-popup__popular-item(href="#") Санкт-Петербург
+        a.region-popup__popular-item(href="#") Астрахань
+        a.region-popup__popular-item(href="#") Москва
+        a.region-popup__popular-item(href="#") Саратов
+        a.region-popup__popular-item(href="#") Уфа
+        a.region-popup__popular-item(href="#") Нижний Новгород
+        a.region-popup__popular-item(href="#") Екатеринбург
+        a.region-popup__popular-item(href="#") Волгоград
+        a.region-popup__popular-item(href="#") Новосибирск
+        a.region-popup__popular-item(href="#") Ставрополь
+        a.region-popup__popular-item(href="#") Воронеж
+        a.region-popup__popular-item(href="#") Омск
+        a.region-popup__popular-item(href="#") Казань
+        a.region-popup__popular-item(href="#") Иркутск
+        a.region-popup__popular-item(href="#") Оренбург
+        a.region-popup__popular-item(href="#") Тюмень
+        a.region-popup__popular-item(href="#") Краснодар
+        a.region-popup__popular-item(href="#") Пермь
+        a.region-popup__popular-item(href="#") Ижевск
+        a.region-popup__popular-item(href="#") Красноярск
+        a.region-popup__popular-item(href="#") Ростов-на-Дону
+        a.region-popup__popular-item(href="#") Челябинск
+        a.region-popup__popular-item(href="#") Самара
+    a.region-popup__all(href="#") По всей России
