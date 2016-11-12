@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    +header
+    .page-top
+      .wrapper
+        +search
+    .breadcrumbs
+      .wrapper.breadcrumbs__wrapper
+        .breadcrumbs__content
+          a.breadcrumbs__item.breadcrumbs__item--page(href="#") Все товары
+    +vip-items
+    .page-content
+      .wrapper.page-content__wrapper
+        .content
+          +sorting
+          .content__items.content__items--short
+            +item('item-5.jpg', 'Книга', '1 000', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
+            +item('item-6.jpg', 'Диск', '300', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
+            +item('item-1.jpg', 'Сборник книг о личной эффективности', '1 400', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
+            +item('item-2.jpg', 'Диск', '300', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
+            +item('item-3.jpg', 'Сборник книг о личной эффективности', '1 400', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
+            +item('item-4.jpg', 'Книга', '1 000', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
+          +pagination
+        .sidebar
+          +side-banner('banner-tall-1.jpg', 'Имиджмейкер', 'Нет места в шкафу, но нечего надеть?')
+    +footer
+    +login
+    +signup
+    +region-popup
+    include ../templates/scripts.pug
