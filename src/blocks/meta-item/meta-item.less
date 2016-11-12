@@ -1,3 +1,44 @@
 .meta-item {
+  display: flex;
+  align-items: center;
+  color: #9f9f9f;
+  font-family: @font-primary;
+  font-size: 12px;
+  flex: 0 0 auto;
   
+  &:before {
+    content: '';
+    display: block;
+    margin-right: 6px;
+  }
+  
+  &--user {
+    
+    &:before {
+      background: url(../img/icon-user.svg) no-repeat;
+      background-size: cover;
+      width: 11px;
+      height: 14px;
+    }
+  }
+  
+  &--map {
+    
+    &:before {
+      background: url(../img/icon-map.svg) no-repeat;
+      background-size: cover;
+      width: 11px;
+      height: 16px;
+    }
+  }
+  
+  &--date {
+    
+    &:before {
+      background: url(../img/icon-date.svg) no-repeat;
+      background-size: cover;
+      width: 14px;
+      height: 14px;
+    }
+  }
 }

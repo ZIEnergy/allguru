@@ -1,3 +1,60 @@
 .sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-top: 2px dotted rgba(22, 53, 89, .16);
+  border-bottom: 2px dotted rgba(22, 53, 89, .16);
+  padding-right: 16px;
   
+  &__content {
+    display: flex;
+  }
+  
+  &__header {
+    color: @color-secondary;
+    font-size: 14px;
+    font-family: @font-primary;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 23px;
+  }
+  
+  &__buttons {
+    display: flex;
+  }
+  
+  &__button {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 14px;
+    text-decoration: none;
+    
+    &:nth-child(n+2) {
+      margin-left: 50px;
+    }
+  }
+  
+  &__view {
+    display: flex;
+  }
+  
+  &__view-item {
+    width: 16px;
+    height: 16px;
+    
+    &:nth-child(n+2) {
+      margin-left: 7px;
+    }
+    
+    &--short {
+      background: url(../img/sorting-view-short.png) no-repeat;
+      background-size: cover;
+    }
+    
+    &--long {
+      background: url(../img/sorting-view-long.png) no-repeat;
+      background-size: cover;
+    }
+  }
 }

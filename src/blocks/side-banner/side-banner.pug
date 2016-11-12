@@ -1,5 +1,6 @@
 mixin side-banner(picture, title, content, additionalClass)
   a.side-banner(href="#", class=additionalClass)
-    .side-banner__picture(src="img/"+picture, alt="Banner")
+    .side-banner__header Реклама
+    img.side-banner__picture(src="img/"+picture, alt="Banner")
     .side-banner__title #{title}
-    .side-banner__dscr {content}
+    .side-banner__dscr #{content}

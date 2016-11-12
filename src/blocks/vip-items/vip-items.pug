@@ -1,6 +1,7 @@
 mixin vip-items(additionalClass)
   .vip-items(class=additionalClass)
-    +vip-item
-    +vip-item
-    +vip-item
-    +vip-item
+    .wrapper.vip-items__wrapper
+      +vip-item('item-1.jpg')
+      +vip-item('item-2.jpg')
+      +vip-item('item-3.jpg')
+      +vip-item('item-4.jpg')

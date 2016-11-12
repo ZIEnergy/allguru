@@ -1,3 +1,31 @@
 .item {
+  display: flex;
+  align-items: flex-start;
+  padding: 27px 0;
+  border-bottom: 2px dotted rgba(22, 53, 89, .16);
   
+  &__picture {
+    width: 227px;
+  }
+  
+  &__content {
+    margin-left: 14px;
+  }
+  
+  &__title {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 24px;
+    margin-bottom: 13px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  &__dscr {
+    color: #303438;
+    font-family: @font-primary;
+    font-size: 13px;
+    margin: 15px 0 29px;
+    line-height: 18px;
+  }
 }

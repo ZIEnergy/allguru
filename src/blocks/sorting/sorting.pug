@@ -1,9 +1,10 @@
 mixin sorting(additionalClass)
   .sorting(class=additionalClass)
-    .sorting__header Сортировать по:
-    .sorting__buttons
-      a.sorting__button(href="#") Цене
-      a.sorting__button(href="#") Дате
+    .sorting__content
+      .sorting__header Сортировать по:
+      .sorting__buttons
+        a.sorting__button(href="#") Цене
+        a.sorting__button(href="#") Дате
     .sorting__view
       a.sorting__view-item.sorting__view-item--short(href="#")
       a.sorting__view-item.sorting__view-item--long(href="#")
