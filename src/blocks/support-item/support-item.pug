@@ -1,5 +1,5 @@
-mixin support-item(picture, additionalClass)
+mixin support-item(picture, content, additionalClass)
   .support-item(class=additionalClass)
     img.support-item__picture(src="img/"+picture, alt="Picture")
-    a.support-item__title(href="#") Финансовый аудит
+    a.support-item__title(href="#") #{content}
     +price('15 000')
