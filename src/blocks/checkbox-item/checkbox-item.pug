@@ -1,0 +1,4 @@
+mixin checkbox-item(id, content, additionalClass)
+  .checkbox-item(class=additionalClass)
+    +checkbox(id)
+    label.checkbox-item__label(for=id) #{content}

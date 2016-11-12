@@ -21,6 +21,10 @@ $(document).ready(function(){
 
 
 
+
+
+
+
 $(".modal-link").magnificPopup({type:"inline"});
 
 
@@ -39,6 +43,7 @@ $(".region__button--west").click(function(e){e.preventDefault(),$(".region__map-
 
 
 $(".slider").slick({slidesToShow:4,infinite:!1});
+
 
 
 

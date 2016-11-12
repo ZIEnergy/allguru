@@ -1,0 +1,19 @@
+.checkbox {
+  
+  &__hidden {
+    display: none;
+    
+    &:checked + .checkbox__fake {
+      background: @color-primary url(../img/check.svg) no-repeat center;
+    }
+  }
+  
+  &__fake {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 2px solid @color-primary;
+    cursor: pointer;
+  }
+}

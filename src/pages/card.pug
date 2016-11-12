@@ -23,7 +23,8 @@ html(lang='en')
               a.button.card__button(href="#") Показать номер
               a.button.card__button(href="#") Написать
         +slider
-        .content
+      .content.card__items
+        .wrapper
           .content__list
             .content-header Все объявления тренера:
             .content__items.content__items--card
@@ -39,5 +40,4 @@ html(lang='en')
     +footer
     +login
     +signup
-    +region-popup
     include ../templates/scripts.pug
