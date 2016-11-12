@@ -38,7 +38,7 @@ $(".region__button--west").click(function(e){e.preventDefault(),$(".region__map-
 
 
 
-$(".slick").slick({});
+$(".slider").slick({slidesToShow:4,infinite:!1});
 
 
 

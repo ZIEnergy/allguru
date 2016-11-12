@@ -17,3 +17,43 @@
 .mfp-bg {
   background: rgba(0, 0, 0, .76);
 }
+
+
+
+/* Slick */
+
+.slick-arrow {
+  position: absolute;
+  color: transparent;
+  background: transparent;
+  width: 17px;
+  height: 32px;
+  top: 50%;
+  margin-top: -16px;
+  cursor: pointer;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+
+.slick-prev {
+  background: url(../img/slider-arrow-blue.svg) no-repeat;
+  left: 0;
+  transform: rotate(180deg);
+  
+  &.slick-disabled {
+    background: url(../img/slider-arrow-grey.svg) no-repeat;
+    transform: none;
+  }
+}
+
+.slick-next {
+  background: url(../img/slider-arrow-blue.svg) no-repeat;
+  right: 0;
+  
+  &.slick-disabled {
+    background: url(../img/slider-arrow-grey.svg) no-repeat;
+    transform: rotate(180deg);
+  }
+}

@@ -40,7 +40,7 @@ gulp.task('images', function() {
       optimizationLevel: 7
     }))
     .pipe(gulp.dest('./build/img'))
-    .pipe(browserSync.reload({stream:true}));
+//    .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('templates', function () {
