@@ -1,0 +1,8 @@
+mixin feedback-item(photo, author, additionalClass)
+  .feedback-item(class=additionalClass)
+    img.feedback-item__photo(src="img/"+photo, alt="Photo")
+    .feedback-item__content
+      .feedback-item__header
+        .feedback-item__author #{author}
+        +meta-item('11.10 2014 9:26', 'meta-item--date', 'feedback-item__meta')
+      .feedback-item__text Топливные чеки за весь период эксплуатации прилагаются.Сервисная книжка со всеми отметками. Машина доукомплектована:З

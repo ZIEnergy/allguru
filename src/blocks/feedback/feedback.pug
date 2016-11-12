@@ -1,0 +1,15 @@
+mixin feedback(additionalClass)
+  .feedback(class=additionalClass)
+    .feedback__header
+      .feedback__header-content Отзывы
+      .feedback__number 2
+    .feedback__list
+      +feedback-item('feedback-1.png', 'Анна Оставина')
+      +feedback-item('feedback-1.png', 'Юлия Богоченко')
+    form.feedback__new(action="#", method="get")
+      .feedback__new-header Добавить отзыв
+      .feedback__new-content
+        .feedback__new-content-top
+          img.feedback__new-photo(src="img/feedback-2.png", alt="Photo")
+          textarea.feedback__new-textarea
+        button.button.button--small.feedback__new-button Отправить
