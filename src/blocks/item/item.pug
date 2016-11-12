@@ -1,0 +1,8 @@
+mixin item(picture, title, content, additionalClass)
+  .item(class=additionalClass)
+    img.item__picture(src="img/"+picture, alt="Photo")
+    .item__content
+      a.item__title(href="#") #{title}
+      +price('15 000')
+      p.item__dscr #{content}
+      +meta
