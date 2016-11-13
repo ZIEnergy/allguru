@@ -1,0 +1,94 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    +header('header--shadow')
+    .breadcrumbs
+      .wrapper.breadcrumbs__wrapper
+        .breadcrumbs__content
+          a.breadcrumbs__item.breadcrumbs__item--page(href="#") Личный кабинет
+          a.breadcrumbs__item.breadcrumbs__item--page(href="#") Пополнение счета
+    .cabinet
+      .wrapper.cabinet__wrapper
+        .content-header.cabinet__header Разместить объявление
+        form.cabinet__content.form.form--ad(action="#", method="post")
+          .content.cabinet__content-wrapper
+            .form__section
+              .form__item
+                .form__item-header.form__item-header--no-margin Контакты
+                .form__item-content
+                  p.form__text 8 908 111 11 11
+                  p.form__text mail@mail.ru
+            .form__section
+              .form__item
+                .form__item-header.form__item-header--no-margin Категория
+                .form__item-content.form__category
+                  a.form__category-item(href="#") Здоровье
+                  a.form__category-item.form__category-item--active(href="#") Для женщин
+                  a.form__category-item(href="#") Бизнес
+                  a.form__category-item(href="#") Путешествия
+                  a.form__category-item(href="#") Эзотерика
+                  a.form__category-item(href="#") Психология
+                  a.form__category-item(href="#") Разное
+            .form__section
+              .form__item
+                .form__item-header Город:
+                .form__item-content
+                  input.input.input--grey.form__input(type="text", placeholder="выберите ваш город")
+              .form__item
+                .form__item-header Название объявления:
+                .form__item-content
+                  input.input.input--grey.form__input(type="text", placeholder="Название")
+              .form__item
+                .form__item-header Описание объявления:
+                .form__item-content
+                  textarea.input.input--grey.form__input.form__textarea.input--textarea(type="text", placeholder="опишите ваше предложение")
+              .form__item
+                .form__item-header Стоимость:
+                .form__item-content
+                  input.input.input--grey.form__input(type="text", placeholder="0")
+              .form__item
+                .form__item-header Фото:
+                .form__item-content.form__item-content--photo
+                  a.form__photo(href="#")
+                  a.form__photo(href="#")
+                  a.form__photo(href="#")
+                  a.form__photo(href="#")
+                  a.form__photo(href="#")
+                  a.form__photo(href="#")
+              .form__item
+                .form__item-header Ссылка на сайт:
+                .form__item-content
+                  input.input.input--grey.form__input(type="text", placeholder="www.site.ru")
+            .form__section
+              .form__item
+                .form__item-header.form__item-header--no-margin Тариф:
+                .form__item-content.form__ad-settings
+                  a.form__ad-settings-item(href="#")
+                    .form__ad-settings-item-icon.form__ad-settings-item-icon--vip
+                    .form__ad-settings-item-content
+                      .form__ad-settings-item-header vip размещение
+                      .form__ad-settings-item-text объявление будет размещено наверху в течении 30 дней
+                  a.form__ad-settings-item(href="#")
+                    .form__ad-settings-item-icon.form__ad-settings-item-icon--distinguish
+                    .form__ad-settings-item-content
+                      .form__ad-settings-item-header Выделить объявление
+                      .form__ad-settings-item-text объявление будет выделено на 30 дней
+                  a.form__ad-settings-item(href="#")
+                    .form__ad-settings-item-icon.form__ad-settings-item-icon--link
+                    .form__ad-settings-item-content
+                      .form__ad-settings-item-header ссылка на ваш сайт
+                      .form__ad-settings-item-text к обьявлению будет добавлена ссылка на сайт
+                  a.form__ad-settings-item.form__ad-settings-item--active(href="#")
+                    .form__ad-settings-item-icon.form__ad-settings-item-icon--free
+                    .form__ad-settings-item-content
+                      .form__ad-settings-item-header бесплатно
+                      .form__ad-settings-item-text объявление будет бесплатно размещено на портале в течении 30 дней
+                  button.button.form__section-button Сохранить
+          +stats
+    +footer
+    +login
+    +signup
+    include ../templates/scripts.pug
