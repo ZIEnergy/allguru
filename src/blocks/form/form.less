@@ -1,34 +1,115 @@
 .form {
   
   &__item {
+    display: flex;
     
+    &:nth-child(n+2) {
+      margin-top: 25px;
+    }
   }
   
   &__userpic {
+    width: 132px;
+    height: 132px;
+    margin-right: 30px;
+    border-radius: 50%;
+    background: url(../img/card-1.png) no-repeat;
+    background-size: cover;
+    position: relative;
     
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .48);
+      border-radius: 50%;
+    }
+  }
+  
+  &__userpic-content {
+    height: 100%;
+    color: #fff;
+    font-family: @font-primary;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    
+    &:before {
+      content: '';
+      display: block;
+      background: url(../img/icon-photo-white.svg) no-repeat;
+      background-size: cover;
+      width: 32px;
+      height: 25px;
+      margin-bottom: 20px;
+    }
   }
   
   &__about {
-    
+    background: #fbfafa;
+    border-radius: 3px;
+    padding: 15px 15px 27px;
+    color: #303438;
+    font-family: @font-primary;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 23px;
   }
   
   &__section {
-    
+    margin-top: 50px;
   }
   
   &__item-header {
-    
+    color: #4d4d4d;
+    font-family: @font-primary;
+    font-size: 14px;
+    line-height: 43px;
+    width: 162px;
   }
   
   &__item-content {
+    width: 470px;
     
+    &--photo {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   
   &__photo {
+    display: block;
+    width: 146px;
+    height: 92px;
+    background: #eef2f4 url(../img/icon-photo-grey.svg) no-repeat center;
+    background-size: 61px 49px;
+    margin-left: 16px;
+    border-radius: 3px;
     
+    &:nth-child(3n+1) {
+      margin-left: 0;
+    }
+    
+    &:nth-child(n+4) {
+      margin-top: 16px;
+    }
   }
   
   &__input {
-    
+    width: 277px;
+  }
+  
+  &__section-button {
+    margin-top: 50px;
   }
 }
