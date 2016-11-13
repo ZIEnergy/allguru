@@ -1,10 +1,10 @@
 mixin stats(additionalClass)
   .stats(class=additionalClass)
     .stats__user
-      img.stats__picture(src="img/user-1.png", alt="Photo")
+      img.stats__picture(src="img/card-1.png", alt="Photo")
       .stats__username Андрей Ивановский
     .stats__content
-      a.stats__content-item(href="#")
+      a.stats__content-item.stats__content-item--active(href="#")
         .stats__content-item-header Мои объявления
         .stats__content-item-number 2
       a.stats__content-item(href="#")

@@ -1,19 +1,30 @@
 .cabinet-item {
+  padding: 28px 0 34px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: @border-dotted;
   
   &__content {
-    
+    display: flex;
   }
   
   &__picture {
-    
+    width: 130px;
+    height: 88px;
+    margin-left: 13px;
   }
   
   &__info {
-    
+    margin-left: 14px;
   }
   
   &__title {
-    
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 24px;
+    text-decoration: none;
+    margin-bottom: 13px;
+    display: block;
   }
   
   &__controls {
@@ -21,17 +32,50 @@
   }
   
   &__controls-item {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+    &:nth-child(n+2) {
+      margin-top: 13px;
+    }
+    
+    &:before {
+      content: '';
+      display: block;
+      margin-right: 6px;
+    }
     
     &--distinguish {
       
+      &:before {
+        background: url(../img/icon-distinguish.svg) no-repeat center;
+        width: 11px;
+        height: 9px;
+      }
     }
     
     &--up {
       
+      &:before {
+        background: url(../img/icon-up.svg) no-repeat center;
+        width: 11px;
+        height: 9px;
+      }
     }
     
     &--vip {
       
+      &:before {
+        background: url(../img/icon-vip.svg) no-repeat center;
+        width: 11px;
+        height: 9px;
+      }
     }
   }
 }

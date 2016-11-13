@@ -14,19 +14,20 @@ html(lang='en')
           a.breadcrumbs__item(href="#") Назад
     .cabinet
       .wrapper.cabinet__wrapper
-        .content-header Мои объявления
-        .content
-          .cabinet__controls
-            +checkbox-item('all', 'Все')
-            a.cabinet__controls-action(href="#") В архив
-            a.cabinet__controls-action(href="#") Выделить
-            a.cabinet__controls-action(href="#") Поднять
-            a.cabinet__controls-action(href="#") VIP
-          .cabinet__items
-            +cabinet-item('item-1')
-            +cabinet-item('item-2')
-            +cabinet-item('item-3')
-        +stats
+        .content-header.cabinet__header Мои объявления
+        .cabinet__content
+          .content.cabinet__content-wrapper
+            .cabinet__controls
+              +checkbox-item('all', 'Все')
+              a.cabinet__controls-action(href="#") В архив
+              a.cabinet__controls-action(href="#") Выделить
+              a.cabinet__controls-action(href="#") Поднять
+              a.cabinet__controls-action(href="#") VIP
+            .cabinet__items
+              +cabinet-item('item-1')
+              +cabinet-item('item-2')
+              +cabinet-item('item-3')
+          +stats
     +footer
     +login
     +signup
