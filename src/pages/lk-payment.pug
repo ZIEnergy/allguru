@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  include ../templates/head.pug
+  include ../templates/blocks.pug
+  
+  body
+    +header('header--shadow')
+    .breadcrumbs
+      .wrapper.breadcrumbs__wrapper
+        .breadcrumbs__content
+          a.breadcrumbs__item.breadcrumbs__item--page(href="#") Личный кабинет
+          a.breadcrumbs__item.breadcrumbs__item--page(href="#") Пополнение счета
+    .cabinet
+      .wrapper.cabinet__wrapper
+        .content-header.cabinet__header Пополнение счёта
+        form.cabinet__content.cabinet__payment(action="#", method="get")
+          .content.cabinet__content-wrapper
+            .cabinet__controls.cabinet__controls--narrow
+              .cabinet__payment-header Введите сумму платежа:
+              input.input.input--grey.cabinet__payment-amount(type="text", placeholder="500")
+            .cabinet__payment-variants
+              .cabinet__payment-header Оплатить с помощью:
+              .cabinet__payment-variants-content
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-yandex.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-cards.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-terminals.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-alpha.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-webmoney.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-sberbank.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-qiwi.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-masterpass.png", alt="Payment")
+                a.cabinet__payment-variant-item(href="#")
+                  img.cabinet__payment-variant-picture(src="img/payment-prom.png", alt="Payment")
+          +stats
+    +footer
+    +login
+    +signup
+    include ../templates/scripts.pug

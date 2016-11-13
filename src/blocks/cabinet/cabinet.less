@@ -25,6 +25,10 @@
     padding: 16px 0;
     border-top: @border-dotted;
     border-bottom: @border-dotted;
+    
+    &--narrow {
+      padding: 5px 0;
+    }
   }
   
   &__controls-action {
@@ -39,6 +43,57 @@
   }
   
   &__items {
+    
+  }
+  
+  &__payment {
+    
+  }
+  
+  &__payment-header {
+    color: @color-secondary;
+    font-family: @font-primary;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  &__payment-amount {
+    margin-left: 39px;
+    height: 41px;
+    width: 178px;
+  }
+  
+  &__payment-variants {
+    margin-top: 45px;
+  }
+  
+  &__payment-variants-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  &__payment-variant-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #edf2f6;
+    width: 177px;
+    height: 98px;
+    .transition;
+    
+    &:hover {
+      border-color: @color-primary;
+    }
+    
+    &:nth-child(n+4) {
+      margin-top: 16px;
+    }
+  }
+  
+  &__payment-variant-picture {
     
   }
 }
