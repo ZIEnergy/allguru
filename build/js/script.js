@@ -45,7 +45,7 @@ $(".region__button--west").click(function(e){e.preventDefault(),$(".region__map-
 
 $(".slider").slick({slidesToShow:4,infinite:!1});
 
-
+$(".sorting__view-item--long").click(function(t){t.preventDefault(),$(".content__items").removeClass("content__items--short"),$(".item").removeClass("item--short")}),$(".sorting__view-item--short").click(function(t){t.preventDefault(),$(".content__items").addClass("content__items--short"),$(".item").addClass("item--short")});
 
 
 

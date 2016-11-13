@@ -1,5 +1,5 @@
 mixin support-item(picture, content, additionalClass)
-  .support-item(class=additionalClass)
+  a.support-item(href="#", class=additionalClass)
     img.support-item__picture(src="img/"+picture, alt="Picture")
-    a.support-item__title(href="#") #{content}
+    .support-item__title #{content}
     +price('15 000')

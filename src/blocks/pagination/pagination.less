@@ -11,6 +11,11 @@
     font-family: @font-primary;
     font-size: 14px;
     text-decoration: none;
+    .transition;
+    
+    &:hover {
+      color: @color-primary;
+    }
   }
   
   &__content {
@@ -22,12 +27,13 @@
     font-family: @font-primary;
     font-size: 14px;
     text-decoration: none;
+    .transition;
     
     &:nth-child(n+2) {
       margin-left: 10px;
     }
     
-    &--active {
+    &--active, &:hover {
       color: @color-primary;
     }
   }

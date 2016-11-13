@@ -16,7 +16,12 @@
     font-size: 14px;
     text-decoration: none;
     
+    &:hover {
+      text-decoration: underline;
+    }
+    
     &--page {
+      .transition;
       
       &:nth-child(n+2) {
         
@@ -24,6 +29,11 @@
           content: '/';
           padding: 0 7px;
         }
+      }
+
+      &:hover {
+        color: darken(@color-primary, 35%);
+        text-decoration: none;
       }
     }
     
