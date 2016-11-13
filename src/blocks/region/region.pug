@@ -7,7 +7,7 @@ mixin region(additionalClass)
             a.region__button.region__button--west(href="#") Восточная часть
           .region__map.region__map--east
             a.region__button.region__button--east(href="#") Европейская часть
-        .region__cities
+        .region__cities.region__cities--west
           .region__cities-column
             a.region__city(href="#") Ростов-на-Дону
             a.region__city(href="#") Москва
@@ -22,6 +22,21 @@ mixin region(additionalClass)
             a.region__city(href="#") Самара
             a.region__city(href="#") Уфа
             a.region__city(href="#") Челябинск
+        .region__cities.region__cities--east
+          .region__cities-column
+            a.region__city(href="#") Краснодар
+            a.region__city(href="#") Нижний Новгород
+            a.region__city(href="#") Пермь
+            a.region__city(href="#") Самара
+            a.region__city(href="#") Уфа
+            a.region__city(href="#") Челябинск
+          .region__cities-column
+            a.region__city(href="#") Ростов-на-Дону
+            a.region__city(href="#") Москва
+            a.region__city(href="#") Санкт-Петербург
+            a.region__city(href="#") Волгоград
+            a.region__city(href="#") Екатеринбург
+            a.region__city(href="#") Казань
       .region__right
         .region__province-column
           a.region__province(href="#") Адыгея

@@ -1,4 +1,5 @@
 $('.slider').slick({
   slidesToShow: 4,
-  infinite: false
+  infinite: false,
+  variableWidth: true
 });
