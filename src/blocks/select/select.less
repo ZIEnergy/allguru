@@ -6,9 +6,16 @@
   background: #fff url(../img/select-arrows.svg) no-repeat;
   background-size: 11px 13px;
   background-position: right 12px center;
-  color: #414141;
+  
+  &:focus {
+    outline: 0;
+  }
   
   &::-ms-expand {
     display: none;
+  }
+  
+  option {
+    color: #414141;
   }
 }

@@ -6,10 +6,19 @@
   font-family: @font-primary;
   padding-left: 14px;
   
+  &:hover {
+    outline-color: @color-primary;
+  }
+  
   &--grey {
     background-color: #eef2f4;
     text-transform: uppercase;
     font-weight: 700;
+    
+    &::-webkit-input-placeholder {color:#c8d3dc;}
+    &::-moz-placeholder          {color:#c8d3dc;}
+    &:-moz-placeholder           {color:#c8d3dc;}
+    &:-ms-input-placeholder      {color:#c8d3dc;}
   }
   
   &--bordered {
