@@ -4,7 +4,6 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0;
   }
   
   &__header {
@@ -15,25 +14,40 @@
     margin-top: 43px;
   
     @media screen and (max-width: @screen-md) {
+      margin-bottom: 33px;
+    
+      .support-items__wrapper {
+        padding: 0;
+      }
+    }
+  }
+  
+  &--top {
+    display: none;
+  
+    @media screen and (max-width: @screen-md) {
       margin-bottom: 60px;
+    
+      .support-items__wrapper {
+        padding: 0;
+      }
     }
   }
   
   &--tablet {
-    display: none;
     margin-bottom: 36px;
   
     @media screen and (max-width: @screen-md) {
       display: block;
-    }
     
-    .support-item {
-      width: 174px;
-    }
+      .support-item {
+        width: 174px;
+      }
     
-    .support-item__picture {
-      width: 100%;
-      height: 115px;
+      .support-item__picture {
+        width: 100%;
+        height: 115px;
+      }
     }
   }
 }
