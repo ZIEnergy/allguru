@@ -3,18 +3,4 @@ mixin stats(additionalClass)
     .stats__user
       img.stats__picture(src="img/card-1.png", alt="Photo")
       .stats__username Андрей Ивановский
-    .stats__content
-      a.stats__content-item.stats__content-item--active(href="#")
-        .stats__content-item-header Мои объявления
-        .stats__content-item-number 2
-      a.stats__content-item(href="#")
-        .stats__content-item-header Мои товары
-        .stats__content-item-number 2
-      a.stats__content-item(href="#")
-        .stats__content-item-header Архив
-        .stats__content-item-number 2
-      a.stats__content-item(href="#")
-        .stats__content-item-header Настройки
-    .stats__balance
-      .stats__balance-header Баланс
-      .stats__balance-content 425 руб.
+    +user-controls

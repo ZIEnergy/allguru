@@ -2,5 +2,8 @@ mixin header(additionalClass)
   header.header#top(class=additionalClass)
     .wrapper.header__wrapper
       +logo
-      +menu
-      +user
+      a.header__menu-button(href="#") Меню
+      .header__content
+        +menu
+        +user
+        +user-controls('header__user-controls')

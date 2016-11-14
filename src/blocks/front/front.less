@@ -4,6 +4,19 @@
   position: relative;
   overflow: hidden;
   
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .35;
+    z-index: 1;
+  }
+  
   &__content {
     position: relative;
     z-index: 2;
@@ -16,6 +29,10 @@
     font-weight: 700;
     font-style: italic;
     text-align: center;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 60px;
+    }
   }
   
   &__comment {
@@ -24,6 +41,10 @@
     font-size: 30px;
     text-align: center;
     margin: 18px 0 54px;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 24px;
+    }
   }
   
   &__video {

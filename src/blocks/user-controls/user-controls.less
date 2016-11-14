@@ -1,0 +1,131 @@
+.user-controls {
+  
+  @media screen and (max-width: @screen-md) {
+    order: 3;
+  }
+  
+  &__content {
+    margin: 50px 0 55px;
+    padding-left: 7px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin: 20px 0 30px;
+      padding-left: 0;
+      margin-left: -6px;
+    }
+    
+    &:before {
+      content: '';
+      display: block;
+      width: 33px;
+      height: 2px;
+      background: #0d2a49;
+      opacity: .09;
+      margin-bottom: 37px;
+      margin-left: 18px;
+    }
+    
+    &:after {
+      content: '';
+      display: block;
+      width: 33px;
+      height: 2px;
+      background: #0d2a49;
+      opacity: .09;
+      margin-top: 55px;
+      margin-left: 18px;
+    }
+  
+    @media screen and (max-width: @screen-md) {
+      
+      &:after, &:before {
+        display: none;
+      }
+    }
+  }
+  
+  &__content-item {
+    width: 216px;
+    height: 40px;
+    padding: 0 17px 0 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 3px;
+  
+    @media screen and (max-width: @screen-md) {
+      width: 172px;
+      padding: 0 7px;
+    }
+    
+    &--active {
+      background-color: #e3e7eb;
+      
+      .stats__content-item-header {
+        
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
+  &__content-item-header {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  &__content-item-number {
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  
+  &__balance {
+    
+  }
+  
+  &__balance-header {
+    color: @color-secondary;
+    font-family: @font-primary;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    @media screen and (max-width: @screen-md) {
+      font-weight: 500;
+    }
+  }
+  
+  &__balance-content {
+    margin-top: 6px;
+    color: @color-primary;
+    font-family: @font-primary;
+    font-size: 22px;
+    font-weight: 700;
+  
+    @media screen and (max-width: @screen-md) {
+      font-weight: 500;
+    }
+  }
+}

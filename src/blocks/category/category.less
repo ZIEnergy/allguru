@@ -1,6 +1,10 @@
 .category {
   text-decoration: none;
   max-width: 200px;
+  
+  @media screen and (max-width: @screen-md) {
+    max-width: 145px;
+  }
     
   &:nth-child(n+2) {
     margin-left: 45px;
@@ -27,6 +31,11 @@
     border-radius: 50%;
     margin: 0 auto;
     .transition;
+  
+    @media screen and (max-width: @screen-md) {
+      width: 128px;
+      height: 128px;
+    }
     
     &--health {
       background: @color-primary url(../img/category-health.svg) no-repeat center;
@@ -65,6 +74,10 @@
     text-align: center;
     margin-top: 18px;
     .transition;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 20px;
+    }
   }
   
   &__content {
@@ -74,5 +87,9 @@
     line-height: 28px;
     text-align: center;
     margin-top: 15px;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 14px;
+    }
   }
 }
