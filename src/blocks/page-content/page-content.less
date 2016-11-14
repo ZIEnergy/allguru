@@ -4,5 +4,13 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+  
+    @media screen and (max-width: @screen-md) {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: @screen-md) {
+    margin-bottom: 60px;
   }
 }

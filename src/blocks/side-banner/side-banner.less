@@ -3,8 +3,16 @@
   text-decoration: none;
   display: block;
   
+  @media screen and (max-width: @screen-md) {
+    max-width: 212px;
+  }
+  
   &:nth-child(n+2) {
     margin-top: 38px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-top: 0;
+    }
   }
   
   &:hover {

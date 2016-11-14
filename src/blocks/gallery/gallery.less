@@ -2,13 +2,20 @@
   display: flex;
   justify-content: space-between;
   
+  @media screen and (max-width: @screen-md) {
+    justify-content: flex-start;
+  }
+  
   &__big {
     width: 580px;
     height: 383px;
   }
   
   &__small-list {
-    
+  
+    @media screen and (max-width: @screen-md) {
+      margin-left: 5px;
+    }
   }
   
   &__small-item {

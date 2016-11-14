@@ -1,4 +1,10 @@
 .sidebar {
   max-width: 212px;
   flex: 0 0 auto;
+  
+  @media screen and (max-width: @screen-md) {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+  }
 }

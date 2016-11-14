@@ -80,12 +80,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  
+    @media screen and (max-width: @screen-md) {
+      justify-content: flex-end;
+      margin-top: 35px;
+    }
   }
   
   &__user {
     display: flex;
     align-items: center;
     text-decoration: none;
+  
+    @media screen and (max-width: @screen-md) {
+      display: none;
+    }
   }
   
   &__user-picture {
@@ -113,9 +122,17 @@
     &:nth-child(n+2) {
       margin-left: 15px;
     }
+  
+    @media screen and (max-width: @screen-md) {
+      width: 228px;
+    }
   }
   
   &__feedback {
     margin-top: 73px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-top: 63px;
+    }
   }
 }
