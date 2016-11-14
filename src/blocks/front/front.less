@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
   
+  @media screen and (max-width: @screen-sm) {
+    padding: 40px 0 20px;
+  }
+  
   &:before {
     content: '';
     display: block;
@@ -33,6 +37,10 @@
     @media screen and (max-width: @screen-md) {
       font-size: 60px;
     }
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 36px;
+    }
   }
   
   &__comment {
@@ -45,6 +53,10 @@
     @media screen and (max-width: @screen-md) {
       font-size: 24px;
     }
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 18px;
+    }
   }
   
   &__video {
@@ -52,5 +64,10 @@
     left: 0;
     top: 0;
     width: 100%;
+  
+    @media screen and (max-width: @screen-sm) {
+      height: 100%;
+      width: auto;
+    }
   }
 }

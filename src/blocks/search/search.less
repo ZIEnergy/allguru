@@ -6,11 +6,20 @@
   border-radius: 5px;
   background: rgba(0, 0, 0, .29);
   
+  @media screen and (max-width: @screen-sm) {
+    flex-direction: column;
+    padding: 30px 12px 26px;
+  }
+  
   &__category {
     width: 207px;
   
     @media screen and (max-width: @screen-md) {
       width: 188px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 100%;
     }
   }
   
@@ -19,6 +28,11 @@
   
     @media screen and (max-width: @screen-md) {
       width: 249px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 100%;
+      margin-top: 8px;
     }
   }
   
@@ -29,12 +43,22 @@
       width: 129px;
       background: #fff;
     }
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 100%;
+      margin-top: 8px;
+    }
   }
   
   &__button {
   
     @media screen and (max-width: @screen-md) {
       width: 110px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 100%;
+      margin-top: 8px;
     }
   }
 }

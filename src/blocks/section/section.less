@@ -15,6 +15,11 @@
     height: 126px;
   }
   
+  @media screen and (max-width: @screen-sm) {
+    width: 100%;
+    height: 132px;
+  }
+  
   &:after {
     content: '';
     display: block;
@@ -39,6 +44,11 @@
   
   &:nth-child(n+2) {
     margin-left: 29px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-left: 0;
+      margin-top: 25px;
+    }
   }
   
   &__icon {
@@ -47,13 +57,27 @@
     border-radius: 50%;
     margin-right: 25px;
     flex: 0 0 auto;
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 48px;
+      height: 48px;
+      border-radius: 0;
+    }
     
     &--ads {
       background: #ecf1f6 url(../img/section-1.svg) no-repeat center;
+  
+      @media screen and (max-width: @screen-sm) {
+        background: url(../img/section-1.svg) no-repeat center;
+      }
     }
     
     &--store {
       background: #ecf1f6 url(../img/section-2.svg) no-repeat center;
+  
+      @media screen and (max-width: @screen-sm) {
+        background: url(../img/section-2.svg) no-repeat center;
+      }
     }
   }
   
@@ -67,6 +91,10 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+  
+    @media screen and (max-width: @screen-sm) {
+      text-transform: none;
+    }
   }
   
   &__dscr {
@@ -75,5 +103,9 @@
     font-size: 14px;
     line-height: 18px;
     margin-top: 20px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 15px;
+    }
   }
 }

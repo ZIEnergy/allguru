@@ -5,9 +5,19 @@
   @media screen and (max-width: @screen-md) {
     max-width: 145px;
   }
+  
+  @media screen and (max-width: @screen-sm) {
+    max-width: none;
+    width: 100%;
+  }
     
   &:nth-child(n+2) {
     margin-left: 45px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-left: 0;
+      margin-top: 38px;
+    }
   }
   
   &:nth-child(5) {
@@ -16,6 +26,10 @@
     
   &:nth-child(n+5) {
     margin-top: 65px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 38px;
+    }
   }
   
   &:hover {
@@ -118,6 +132,11 @@
   
     @media screen and (max-width: @screen-md) {
       font-size: 14px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      max-width: 145px;
+      margin: 15px auto 0;
     }
   }
 }
