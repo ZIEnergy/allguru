@@ -16,6 +16,7 @@
     background: url(../img/card-1.png) no-repeat;
     background-size: cover;
     position: relative;
+    text-decoration: none;
     
     &:after {
       content: '';
@@ -144,9 +145,17 @@
     font-size: 18px;
     text-decoration: none;
     
+    &:hover {
+      text-decoration: underline;
+    }
+    
     &--active {
       background-color: #eef2f5;
       border: 1px solid #e1e1e1;
+      
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   

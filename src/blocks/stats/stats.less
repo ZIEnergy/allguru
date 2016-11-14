@@ -62,6 +62,13 @@
     
     &--active {
       background-color: #e3e7eb;
+      
+      .stats__content-item-header {
+        
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
   
@@ -71,6 +78,10 @@
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
   
   &__content-item-number {
