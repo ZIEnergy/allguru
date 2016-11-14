@@ -12,7 +12,7 @@ html(lang='en')
       .wrapper.breadcrumbs__wrapper
         .breadcrumbs__content
           a.breadcrumbs__item.breadcrumbs__item--page(href="#") Все товары
-    +support-items
+    +support-items('support-items--tablet')
     .page-content
       .wrapper.page-content__wrapper
         .content
@@ -25,7 +25,7 @@ html(lang='en')
             +item('item-3.jpg', 'Сборник книг о личной эффективности', '1 400', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
             +item('item-4.jpg', 'Книга', '1 000', 'Несколько слов о предлагаемой услуге или курсе. Буквально несколько предложений. Несколько слов о предлагаемой...', 'item--short')
           +pagination
-        .sidebar
+        .sidebar.sidebar--hiding
           +side-banner('banner-tall-1.jpg', 'Имиджмейкер', 'Нет места в шкафу, но нечего надеть?')
     +footer
     +login
