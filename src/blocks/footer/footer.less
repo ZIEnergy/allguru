@@ -3,6 +3,10 @@
   padding-top: 64px;
   background: @color-bg;
   
+  @media screen and (max-width: @screen-md) {
+    padding-top: 85px;
+  }
+  
   &__go-top {
     position: absolute;
     left: 50%;
@@ -12,6 +16,10 @@
   
   &__socials {
     margin-bottom: 75px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-bottom: 70px;
+    }
   }
   
   &__socials-header {
