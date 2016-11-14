@@ -6,6 +6,10 @@
     &:nth-child(n+2) {
       margin-top: 25px;
     }
+  
+    @media screen and (max-width: @screen-sm) {
+      flex-direction: column;
+    }
   }
   
   &__userpic {
@@ -28,6 +32,10 @@
       height: 100%;
       background: rgba(0, 0, 0, .48);
       border-radius: 50%;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      margin: 0 auto 20px;
     }
   }
   
@@ -81,6 +89,11 @@
     font-size: 14px;
     line-height: 43px;
     width: 162px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-bottom: 10px;
+      line-height: normal;
+    }
     
     &--no-margin {
       line-height: normal;
@@ -89,10 +102,15 @@
   
   &__item-content {
     width: 470px;
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 100%;
+    }
     
     &--photo {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
   
@@ -102,11 +120,22 @@
     height: 92px;
     background: #eef2f4 url(../img/icon-photo-grey.svg) no-repeat center;
     background-size: 61px 49px;
-    margin-left: 16px;
+    margin-left: 5px;
     border-radius: 3px;
     
     &:nth-child(3n+1) {
       margin-left: 0;
+    }
+    
+    &:nth-child(2n+1) {
+  
+      @media screen and (max-width: @screen-sm) {
+        margin-left: 0;
+      }
+    }
+    
+    &:nth-child(n+3) {
+      margin-top: 16px;
     }
     
     &:nth-child(n+4) {
@@ -117,6 +146,10 @@
   &__input {
     width: 277px;
     border: 1px solid #e1e1e1;
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 100%;
+    }
   }
   
   &__section-button {
@@ -127,6 +160,10 @@
     color: #414141;
     font-family: @font-primary;
     font-size: 14px;
+  
+    @media screen and (max-width: @screen-sm) {
+      font-weight: 500;
+    }
     
     &:nth-child(n+2) {
       margin-top: 10px;
@@ -136,6 +173,10 @@
   &__category {
     max-width: 130px;
     margin-top: -7px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 0;
+    }
   }
   
   &__category-item {

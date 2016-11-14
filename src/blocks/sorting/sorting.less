@@ -7,6 +7,10 @@
   border-bottom: @border-dotted;
   padding-right: 16px;
   
+  @media screen and (max-width: @screen-sm) {
+    padding-right: 0;
+  }
+  
   &__content {
     display: flex;
   }
@@ -18,6 +22,10 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-right: 23px;
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 12px;
+    }
   }
   
   &__buttons {
@@ -32,6 +40,10 @@
     
     &:nth-child(n+2) {
       margin-left: 50px;
+  
+      @media screen and (max-width: @screen-sm) {
+        margin-left: 20px;
+      }
     }
     
     &:hover {
@@ -41,6 +53,10 @@
   
   &__view {
     display: flex;
+  
+    @media screen and (max-width: @screen-sm) {
+      display: none;
+    }
   }
   
   &__view-item {

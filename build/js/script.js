@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 $(".header__menu-button").click(function(){$(this).toggleClass("header__menu-button--active"),$(".header__content").fadeToggle("fast").css("display","flex")});
 
-
+$(window).width()<750&&($(".content__items").addClass("content__items--short"),$(".item").addClass("item--short"));
 
 
 
@@ -45,7 +45,7 @@ $(".region__button--west").click(function(e){e.preventDefault(),$(".region__map-
 
 
 
-$(".slider").slick({slidesToShow:4,infinite:!1,variableWidth:!0});
+$(".slider").slick({slidesToShow:4,infinite:!1,variableWidth:!0,responsive:[{breakpoint:750,settings:{slidesToShow:1,slidesToScroll:1,variableWidth:!1}}]});
 
 $(".sorting__view-item--long").click(function(t){t.preventDefault(),$(".content__items").removeClass("content__items--short"),$(".item").removeClass("item--short")}),$(".sorting__view-item--short").click(function(t){t.preventDefault(),$(".content__items").addClass("content__items--short"),$(".item").addClass("item--short")});
 

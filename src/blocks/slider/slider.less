@@ -11,6 +11,10 @@
     
     &:nth-child(n+2) {
       margin-left: 16px;
+  
+      @media screen and (max-width: @screen-sm) {
+        margin-left: 0;
+      }
     }
     
     &:after {
