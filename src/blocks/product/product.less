@@ -1,6 +1,6 @@
 .product {
   border-top: @border-dotted;
-  padding-top: 17px;
+  padding-top: 13px;
   padding-right: 14px;
   
   @media screen and (max-width: @screen-sm) {
@@ -10,15 +10,16 @@
   }
   
   &__gallery {
-    margin-top: 10px;
+    margin-top: 12px;
   }
   
   &__info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 9px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    padding-right: 21px;
   
     @media screen and (max-width: @screen-sm) {
       flex-direction: column;
@@ -55,7 +56,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-left: 49px;
+    margin-left: 47px;
     
     &:before {
       content: '';
@@ -102,7 +103,7 @@
   }
   
   &__author {
-    margin-top: 75px;
+    margin-top: 71px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,7 +145,7 @@
   }
   
   &__author-buttons {
-    
+    display: flex;
   
     @media screen and (max-width: @screen-sm) {
       display: flex;
@@ -154,6 +155,8 @@
   }
   
   &__author-button {
+    width: 228px;
+    padding: 0;
     
     &:nth-child(n+2) {
       margin-left: 15px;
@@ -163,14 +166,10 @@
         margin-top: 15px;
       }
     }
-  
-    @media screen and (max-width: @screen-md) {
-      width: 228px;
-    }
   }
   
   &__feedback {
-    margin-top: 73px;
+    margin-top: 53px;
   
     @media screen and (max-width: @screen-md) {
       margin-top: 63px;
