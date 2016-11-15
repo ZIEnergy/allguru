@@ -9,8 +9,11 @@
     }
   }
   
-  &:nth-child(n+2) {
-    margin-top: 20px;
+  @media screen and (max-width: @screen-sm) {
+  
+    &:nth-child(n+2) {
+      margin-top: 20px;
+    }
   }
   
   &__picture {
