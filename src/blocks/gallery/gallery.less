@@ -17,14 +17,18 @@
     flex: 0 0 auto;
   
     @media screen and (max-width: @screen-sm) {
-      width: 100%;
-      height: 200px;
+      width: auto;
+      height: auto;
     }
   }
   
   &__big-picture {
     width: 100%;
     height: 100%;
+  
+    @media screen and (max-width: @screen-sm) {
+      height: auto;
+    }
   }
   
   &__big-video {

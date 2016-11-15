@@ -125,6 +125,7 @@
     width: 177px;
     height: 98px;
     .transition;
+    overflow: hidden;
     
     &:hover {
       border-color: @color-primary;
@@ -149,8 +150,9 @@
   &__payment-variant-picture {
     
     @media screen and (max-width: @screen-sm) {
-      width: 100%;
+      max-width: 100%;
       height: auto;
+      max-height: 100%;
     }
   }
 }

@@ -112,6 +112,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      max-width: 470px;
+  
+      @media screen and (max-width: @screen-xs) {
+       max-width: 380px;
+      }      
     }
   }
   
@@ -140,7 +145,7 @@
       }
     }
   
-    @media screen and (max-width: @screen-sm) {
+    @media screen and (max-width: @screen-xs) {
     
       &:nth-child(n+3) {
         margin-top: 16px;

@@ -4,6 +4,7 @@
   
   @media screen and (max-width: @screen-md) {
     max-width: 145px;
+    max-width: 25%;
   }
   
   @media screen and (max-width: @screen-sm) {
@@ -13,6 +14,10 @@
     
   &:nth-child(n+2) {
     margin-left: 45px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-left: 0;
+    }
   
     @media screen and (max-width: @screen-sm) {
       margin-left: 0;
@@ -141,11 +146,13 @@
   
     @media screen and (max-width: @screen-md) {
       font-size: 14px;
+      padding: 0 15px;
     }
   
     @media screen and (max-width: @screen-sm) {
       max-width: 145px;
       margin: 15px auto 0;
+      padding: 0;
     }
   }
 }
