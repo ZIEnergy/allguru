@@ -1,4 +1,4 @@
 mixin modal-video(additionalClass)
   .modal-video.modal.mfp-hide#video(class=additionalClass)
     .mfp-close
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XKTbmiSqcmc" frameborder="0" allowfullscreen></iframe>
+    iframe.modal__video-content(src='https://www.youtube.com/embed/XKTbmiSqcmc', frameborder='0', allowfullscreen='')
