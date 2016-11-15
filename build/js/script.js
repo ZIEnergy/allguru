@@ -45,8 +45,8 @@ $(".search__region").change(function(){$(".search__region option").each(function
 
 
 
-
 $(".slider").slick({slidesToShow:4,infinite:!1,variableWidth:!0,responsive:[{breakpoint:750,settings:{slidesToShow:1,slidesToScroll:1,variableWidth:!1}}]});
+
 $(".sorting__view-item--long").click(function(t){t.preventDefault(),$(".content__items").removeClass("content__items--short"),$(".item").removeClass("item--short")}),$(".sorting__view-item--short").click(function(t){t.preventDefault(),$(".content__items").addClass("content__items--short"),$(".item").addClass("item--short")});
 
 

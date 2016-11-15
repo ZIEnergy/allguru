@@ -4,6 +4,10 @@
   justify-content: space-between;
   border-bottom: @border-dotted;
   
+  @media screen and (max-width: @screen-md) {
+    padding-right: 14px;
+  }
+  
   @media screen and (max-width: @screen-sm) {
     flex-direction: column;
   }
@@ -21,6 +25,10 @@
     height: 88px;
     margin-left: 13px;
   
+    @media screen and (max-width: @screen-md) {
+     margin-left: 32px;
+    }
+  
     @media screen and (max-width: @screen-sm) {
       margin-left: 0;
       margin-top: 15px;
@@ -29,6 +37,10 @@
   
   &__info {
     margin-left: 14px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-left: 27px;
+    }
   
     @media screen and (max-width: @screen-sm) {
       margin-left: 0;
@@ -50,7 +62,6 @@
   }
   
   &__controls {
-    
   
     @media screen and (max-width: @screen-sm) {
       display: flex;

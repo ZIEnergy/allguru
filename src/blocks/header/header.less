@@ -10,6 +10,7 @@
   
     @media screen and (max-width: @screen-md) {
       padding: 0 14px;
+      height: 64px;
     }
   }
   
@@ -25,25 +26,26 @@
       right: 0;
       top: 0;
       width: auto;
+      width: 190px;
       background: #eef2f5;
       flex-direction: column;
       height: 100%;
       z-index: 4;
       justify-content: flex-start;
       align-items: flex-start;
-      padding: 70px 14px 20px;
+      padding: 70px 10px 20px 14px;
     }
   
-    @media screen and (max-width: @screen-sm) {
-      background: @color-primary;
-      top: 70px;
-      left: 0;
-      right: auto;
-      width: 100%;
-      position: absolute;
-      padding: 30px 15px;
-      height: auto;
-    }
+//    @media screen and (max-width: @screen-sm) {
+//      background: @color-primary;
+//      top: 70px;
+//      left: 0;
+//      right: auto;
+//      width: 100%;
+//      position: absolute;
+//      padding: 30px 15px;
+//      height: auto;
+//    }
   }
   
   &__menu-button {
@@ -69,7 +71,7 @@
       
       &--active {
         position: fixed;
-        top: 19px;
+        top: 16px;
         right: 14px;
       }
       

@@ -2,7 +2,7 @@
   padding: 38px 0 42px;
   
   @media screen and (max-width: @screen-md) {
-    padding-top: 56px;
+    padding-top: 55px;
   }
   
   @media screen and (max-width: @screen-sm) {
@@ -14,7 +14,7 @@
     justify-content: space-between;
   
     @media screen and (max-width: @screen-md) {
-      padding: 0 14px;
+      padding: 0 24px 0 14px;
     }
   }
   
@@ -169,6 +169,10 @@
     
     &:nth-child(n+2) {
       margin-left: 10px;
+  
+      @media screen and (max-width: @screen-md) {
+        margin-left: 33px;
+      }
     }
   }
   

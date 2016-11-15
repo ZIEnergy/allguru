@@ -4,16 +4,16 @@
     order: 3;
   }
   
-  @media screen and (max-width: @screen-sm) {
-    display: none;
-  }
+//  @media screen and (max-width: @screen-sm) {
+//    display: none;
+//  }
   
   &__content {
     margin: 52px 0 55px;
     padding-left: 7px;
   
     @media screen and (max-width: @screen-md) {
-      margin: 20px 0 30px;
+      margin: 20px 0 25px;
       padding-left: 0;
       margin-left: -6px;
     }
@@ -51,7 +51,7 @@
   &__content-item {
     width: 216px;
     height: 40px;
-    padding: 0 17px 0 19px;
+    padding: 0 17px 0 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,15 +61,16 @@
     @media screen and (max-width: @screen-md) {
       width: 172px;
       padding: 0 7px;
+      height: 36px;
     }
     
     &--active {
       background-color: #e3e7eb;
   
-      @media screen and (max-width: @screen-sm) {
-        background: transparent;
-        border: 1px solid #fff;
-      }
+//      @media screen and (max-width: @screen-sm) {
+//        background: transparent;
+//        border: 1px solid #fff;
+//      }
       
       .stats__content-item-header {
         
@@ -92,9 +93,9 @@
       font-weight: 500;
     }
   
-    @media screen and (max-width: @screen-sm) {
-      color: #fff;
-    }
+//    @media screen and (max-width: @screen-sm) {
+//      color: #fff;
+//    }
     
     &:hover {
       text-decoration: underline;
@@ -113,13 +114,17 @@
       font-weight: 500;
     }
   
-    @media screen and (max-width: @screen-sm) {
-      color: #fff;
-    }
+//    @media screen and (max-width: @screen-sm) {
+//      color: #fff;
+//    }
   }
   
   &__balance {
     padding-left: 25px;
+  
+    @media screen and (max-width: @screen-md) {
+      padding-left: 0;
+    }
   }
   
   &__balance-header {
@@ -133,9 +138,9 @@
       font-weight: 500;
     }
   
-    @media screen and (max-width: @screen-sm) {
-      color: #fff;
-    }
+//    @media screen and (max-width: @screen-sm) {
+//      color: #fff;
+//    }
   }
   
   &__balance-content {
@@ -149,8 +154,8 @@
       font-weight: 500;
     }
   
-    @media screen and (max-width: @screen-sm) {
-      color: #fff;
-    }
+//    @media screen and (max-width: @screen-sm) {
+//      color: #fff;
+//    }
   }
 }
