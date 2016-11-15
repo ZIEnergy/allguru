@@ -44,6 +44,7 @@
     color: #fff;
     font-family: @font-primary;
     font-size: 16px;
+    line-height: 18px;
     text-transform: uppercase;
     text-align: center;
     display: flex;
@@ -60,19 +61,19 @@
       background-size: cover;
       width: 32px;
       height: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
   }
   
   &__about {
     background: #fbfafa;
     border-radius: 3px;
-    padding: 15px 15px 27px;
+    padding: 12px 15px 27px;
     color: #303438;
     font-family: @font-primary;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     
     @media screen and (max-width: @screen-md) {
       border: 1px solid #e1e1e1;
@@ -80,7 +81,7 @@
   }
   
   &__section {
-    margin-top: 50px;
+    margin-top: 54px;
   }
   
   &__item-header {
@@ -133,9 +134,12 @@
         margin-left: 0;
       }
     }
+  
+    @media screen and (max-width: @screen-sm) {
     
-    &:nth-child(n+3) {
-      margin-top: 16px;
+      &:nth-child(n+3) {
+        margin-top: 16px;
+      }
     }
     
     &:nth-child(n+4) {
@@ -153,7 +157,9 @@
   }
   
   &__section-button {
+    width: 275px;
     margin-top: 50px;
+    margin-left: 163px;
   }
   
   &__text {
@@ -172,16 +178,18 @@
   
   &__category {
     max-width: 130px;
-    margin-top: -7px;
+    margin-top: -8px;
+    margin-left: -8px;
   
     @media screen and (max-width: @screen-sm) {
       margin-top: 0;
+      margin-left: 0;
     }
   }
   
   &__category-item {
-    height: 37px;
-    padding: 0 8px;
+    height: 36px;
+    padding: 0 9px;
     border-radius: 2px;
     display: inline-block;
     padding-left: 8px;
@@ -279,8 +287,8 @@
     
     .form__section {
       margin-top: 0;
-      padding-top: 20px;
-      padding-bottom: 30px;
+      padding-top: 22px;
+      padding-bottom: 23px;
       border-top: @border-dotted;
     }
   }
