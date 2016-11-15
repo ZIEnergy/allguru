@@ -1,5 +1,5 @@
 mixin search(additionalClass)
-  form.search(actio="#", method="get" class=additionalClass)
+  form.search(action="#", method="get" class=additionalClass)
     select.select.input.search__category
       option.select__placeholder(selected, disabled, hidden) Выберите категорию
       option Здоровье
@@ -23,7 +23,7 @@ mixin search(additionalClass)
       option Челябинск
       option Волгоград
       option Ростов-на-Дону
-      option.search__other-city(href="#region", val="region") Выбрать другой...
+      option.search__other-city Выбрать другой...
     a.search__region-link.modal-link(href="#region")
     button.button.search__button Поиск
     
