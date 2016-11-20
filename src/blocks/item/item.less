@@ -11,7 +11,7 @@
     border-bottom-color: transparent;
   }
     
-  &:hover {
+  &--active {
     background: #ecf1f6;
     border-bottom: 2px solid @color-primary;
   }
@@ -34,6 +34,10 @@
     margin-bottom: 18px;
     display: block;
     text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
   
   &__dscr {
@@ -49,7 +53,11 @@
     display: block;
     border-bottom: 0;
     padding: 8px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
+    
+    &.item--active {
+      border-bottom-color: @color-primary;
+    }
   
     @media screen and (max-width: @screen-sm) {
       width: 100%;
@@ -60,15 +68,6 @@
   
       @media screen and (max-width: @screen-sm) {
         margin-left: 0;
-      }
-    }
-    
-    &:last-child {
-      border-bottom: 3px solid transparent;
-    
-      &:hover {
-        background: #ecf1f6;
-        border-bottom: 3px solid @color-primary;
       }
     }
     

@@ -1,8 +1,8 @@
-mixin item(picture, title, price, content, additionalClass)
-  a.item(href="#", class=additionalClass)
+mixin item(picture, title, price, content, additionalClass, additionalClass2)
+  .item(class=additionalClass, class=additionalClass2)
     img.item__picture(src="img/"+picture, alt="Photo")
     .item__content
-      .item__title #{title}
+      a.item__title(href="#") #{title}
       +price(price)
       p.item__dscr #{content}
       +meta
